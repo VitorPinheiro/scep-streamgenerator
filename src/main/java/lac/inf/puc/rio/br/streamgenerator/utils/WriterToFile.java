@@ -16,7 +16,6 @@ import java.util.List;
 
 /**
  * @author vitor
- *
  */
 public class WriterToFile 
 {
