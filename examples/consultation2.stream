@@ -1,0 +1,5 @@
+http://example.org/Patient4 http://example.org/enters http://example.org/Room2 00:19:06
+http://example.org/Patient3 http://example.org/leaves http://example.org/Room3 00:20:34
+http://example.org/Patient1 http://example.org/leaves http://example.org/Room1 00:29:31
+http://example.org/Patient4 http://example.org/leaves http://example.org/Room2 00:39:16
+http://example.org/Z http://example.org/enters http://example.org/Z 11:59:99

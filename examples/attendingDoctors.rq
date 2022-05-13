@@ -1,0 +1,31 @@
+REGISTER STREAM SAttendingDoctorsNFA AS
+PREFIX ex: <http://example.org/>
+PREFIX onto: <file:///Users/vitor/git-repository/SCEPcloud/SCEP_operatorFC/examples/>
+CONSTRUCT {?doctor ex:attended ?patient }
+FROM STREAM <http://example.org> [RANGE TRIPLES 11]
+FROM <file:///Users/vitor/git-repository/SCEPcloud/SCEP_operatorFC/examples/consultation.rdf>
+WHERE
+{
+    {
+        {
+            {
+                ?a ex:enters ?a_room .
+                ?a ex:isDoctor onto:Hospital
+                BIND (?a AS ?doctor)
+                BIND (?a_room AS ?doctor_room)
+            }
+            {
+                ?b ex:enters ?b_room .
+                ?b ex:isPatient onto:Hospital
+                BIND (?b AS ?patient)
+                BIND (?b_room AS ?patient_room)
+            }
+            FILTER (?doctor_room=?patient_room)
+        }
+        ?c ex:leaves ?c_room .
+        ?c ex:isPatient ?c_hospital
+        BIND (?c AS ?B2)
+        BIND (?c_room AS ?B2_room)
+    }
+    FILTER (?patient=?B2 && ?patient_room=?B2_room)
+}

@@ -1,0 +1,36 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://example.org/" >
+
+  <rdf:Description rdf:about="http://example.org/Doctor1">
+    <j.0:isDoctor rdf:resource="Hospital"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Doctor2">
+    <j.0:isDoctor rdf:resource="Hospital"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Doctor3">
+    <j.0:isDoctor rdf:resource="Hospital"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Doctor4">
+    <j.0:isDoctor rdf:resource="Hospital"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Patient1">
+    <j.0:isPatient rdf:resource="Hospital"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Patient2">
+    <j.0:isPatient rdf:resource="Hospital"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Patient3">
+    <j.0:isPatient rdf:resource="Hospital"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/Patient4">
+    <j.0:isPatient rdf:resource="Hospital"/>
+  </rdf:Description>
+</rdf:RDF>

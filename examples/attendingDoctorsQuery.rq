@@ -1,0 +1,12 @@
+REGISTER QUERY AttendingDoctorsNFA AS
+PREFIX ex: <http://example.org/>
+PREFIX onto: <file:///Users/vitor/git-repository/SCEPcloud/SCEP_operatorFC/examples/>
+CONSTRUCT (ex:Doctor2 ex:hasAttented COUNT(?c)}
+FROM STREAM <http://example.org> [RANGE TRIPLES 4]
+FROM <file:///Users/vitor/git-repository/SCEPcloud/SCEP_operatorFC/examples/consultation.rdf>
+WHERE
+{
+    {
+        ex:Doctor1 ex:attended ?c 
+    }    
+}

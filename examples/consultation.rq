@@ -1,0 +1,30 @@
+REGISTER QUERY ConsultationNFA AS
+PREFIX ex: <http://example.org/>
+SELECT ?B0 ?B0_room ?B1 ?B1_room ?B2 ?B2_room ?a_hospital
+FROM STREAM <http://example.org> [RANGE 50m STEP 30m]
+FROM <file:///Users/vitor/git-repository/SCEPcloud/SCEP_operatorFC/examples/consultation.rdf>
+WHERE
+{
+    {
+        {
+            {
+                ?a ex:enters ?a_room .
+                ?a ex:isDoctor ?a_hospital
+                BIND (?a AS ?B0)
+                BIND (?a_room AS ?B0_room)
+            }
+            {
+                ?b ex:enters ?b_room .
+                ?b ex:isPatient ?b_hospital
+                BIND (?b AS ?B1)
+                BIND (?b_room AS ?B1_room)
+            }
+            FILTER (?B0_room=?B1_room)
+        }
+        ?c ex:leaves ?c_room .
+        ?c ex:isPatient ?c_hospital
+        BIND (?c AS ?B2)
+        BIND (?c_room AS ?B2_room)
+    }
+    FILTER (?B1=?B2 && ?B1_room=?B2_room)
+}

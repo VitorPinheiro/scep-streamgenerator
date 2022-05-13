@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="AllDependencies">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/AllDependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/eu.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/joptsimple.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/org.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,113 @@
+Query que precisa receber a snip e que esta neste node é do tipo: NUMBER_OF_TRIPLES
+diff (snipSize - windowSize) = 42
+Temos 2 janelas dentro deste snip.
+Não adicionei dummy, mas peguei uma triple extra da stream e mandei.
+Triple extra foi = http://example.org/61 http://example.org/enters http://example.org/Room22 . (60000)
+Detection 1
+Answer for query: 
+<http://example.org/13>	<http://example.org/leaves>	<http://example.org/Room2>	
+<http://example.org/19>	<http://example.org/enters>	<http://example.org/Room22>	
+<http://example.org/22>	<http://example.org/enters>	<http://example.org/Room33>	
+<http://example.org/28>	<http://example.org/leaves>	<http://example.org/Room22>	
+<http://example.org/6>	<http://example.org/leaves>	<http://example.org/Room2>	
+<http://example.org/12>	<http://example.org/leaves>	<http://example.org/Room1>	
+<http://example.org/18>	<http://example.org/enters>	<http://example.org/Room11>	
+<http://example.org/21>	<http://example.org/leaves>	<http://example.org/Room22>	
+<http://example.org/27>	<http://example.org/leaves>	<http://example.org/Room11>	
+<http://example.org/5>	<http://example.org/enters>	<http://example.org/Room3>	
+<http://example.org/30>	<http://example.org/enters>	<http://example.org/ZZ2>	
+<http://example.org/11>	<http://example.org/leaves>	<http://example.org/Room3>	
+<http://example.org/17>	<http://example.org/enters>	<http://example.org/Room22>	
+<http://example.org/20>	<http://example.org/enters>	<http://example.org/Room33>	
+<http://example.org/26>	<http://example.org/leaves>	<http://example.org/Room33>	
+<http://example.org/4>	<http://example.org/enters>	<http://example.org/Room2>	
+<http://example.org/10>	<http://example.org/enters>	<http://example.org/Room2>	
+<http://example.org/16>	<http://example.org/enters>	<http://example.org/Room11>	
+<http://example.org/25>	<http://example.org/enters>	<http://example.org/Room22>	
+<http://example.org/3>	<http://example.org/enters>	<http://example.org/Room1>	
+<http://example.org/9>	<http://example.org/enters>	<http://example.org/Room2>	
+<http://example.org/15>	<http://example.org/enters>	<http://example.org/Z2>	
+<http://example.org/24>	<http://example.org/enters>	<http://example.org/Room22>	
+<http://example.org/2>	<http://example.org/enters>	<http://example.org/Room2>	
+<http://example.org/8>	<http://example.org/leaves>	<http://example.org/Room2>	
+<http://example.org/14>	<http://example.org/enters>	<http://example.org/Z1>	
+<http://example.org/29>	<http://example.org/enters>	<http://example.org/ZZ1>	
+<http://example.org/23>	<http://example.org/leaves>	<http://example.org/Room22>	
+<http://example.org/1>	<http://example.org/enters>	<http://example.org/Room1>	
+<http://example.org/7>	<http://example.org/enters>	<http://example.org/Room3>	
+
+Detection 2
+Answer for query: 
+<http://example.org/32>	<http://example.org/enters>	<http://example.org/ZZ4>	
+<http://example.org/38>	<http://example.org/enters>	<http://example.org/Room1>	
+<http://example.org/60>	<http://example.org/leaves>	<http://example.org/Room22>	
+<http://example.org/41>	<http://example.org/enters>	<http://example.org/Room2>	
+<http://example.org/47>	<http://example.org/enters>	<http://example.org/Room2>	
+<http://example.org/50>	<http://example.org/leaves>	<http://example.org/Room2>	
+<http://example.org/56>	<http://example.org/enters>	<http://example.org/Room22>	
+<http://example.org/31>	<http://example.org/enters>	<http://example.org/ZZ3>	
+<http://example.org/37>	<http://example.org/enters>	<http://example.org/ZZ23>	
+<http://example.org/40>	<http://example.org/enters>	<http://example.org/Room1>	
+<http://example.org/46>	<http://example.org/enters>	<http://example.org/Room2>	
+<http://example.org/55>	<http://example.org/enters>	<http://example.org/Room11>	
+<http://example.org/36>	<http://example.org/enters>	<http://example.org/ZZ8>	
+<http://example.org/45>	<http://example.org/leaves>	<http://example.org/Room2>	
+<http://example.org/54>	<http://example.org/enters>	<http://example.org/Room22>	
+<http://example.org/35>	<http://example.org/enters>	<http://example.org/ZZ7>	
+<http://example.org/44>	<http://example.org/enters>	<http://example.org/Room3>	
+<http://example.org/53>	<http://example.org/enters>	<http://example.org/Room11>	
+<http://example.org/59>	<http://example.org/enters>	<http://example.org/Room33>	
+<http://example.org/34>	<http://example.org/enters>	<http://example.org/ZZ6>	
+<http://example.org/43>	<http://example.org/leaves>	<http://example.org/Room2>	
+<http://example.org/49>	<http://example.org/leaves>	<http://example.org/Room1>	
+<http://example.org/52>	<http://example.org/enters>	<http://example.org/Z2>	
+<http://example.org/58>	<http://example.org/leaves>	<http://example.org/Room22>	
+<http://example.org/33>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/39>	<http://example.org/enters>	<http://example.org/Room2>	
+<http://example.org/42>	<http://example.org/enters>	<http://example.org/Room3>	
+<http://example.org/48>	<http://example.org/leaves>	<http://example.org/Room3>	
+<http://example.org/51>	<http://example.org/enters>	<http://example.org/Z1>	
+<http://example.org/57>	<http://example.org/enters>	<http://example.org/Room33>	
+
+Triplas que não foram enviadas ao operador (11): [http://example.org/62 http://example.org/enters http://example.org/Room22 . (61000), http://example.org/63 http://example.org/leaves http://example.org/Room33 . (62000), http://example.org/64 http://example.org/leaves http://example.org/Room11 . (63000), http://example.org/65 http://example.org/leaves http://example.org/Room22 . (64000), http://example.org/66 http://example.org/enters http://example.org/ZZ1 . (65000), http://example.org/67 http://example.org/enters http://example.org/ZZ2 . (66000), http://example.org/68 http://example.org/enters http://example.org/ZZ3 . (67000), http://example.org/69 http://example.org/enters http://example.org/ZZ4 . (68000), http://example.org/70 http://example.org/enters http://example.org/ZZ5 . (69000), http://example.org/71 http://example.org/enters http://example.org/ZZ5 . (70000), http://example.org/72 http://example.org/enters http://example.org/ZZ5 . (71000)]
+
+
+Query que precisa receber a snip e que esta neste node é do tipo: NUMBER_OF_TRIPLES
+diff (snipSize - windowSize) = 0
+Temos exatamente 1 janela nesse snip.
+SnipSize = 30
+WindowSize = 30
+snip (not adding dummy) = 30
+Triple extra foi = http://example.org/91 http://example.org/enters http://example.org/ZZ5 . (90000)
+Detection 3
+Answer for query: 
+<http://example.org/85>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/66>	<http://example.org/enters>	<http://example.org/ZZ1>	
+<http://example.org/75>	<http://example.org/enters>	<http://example.org/ZZ4>	
+<http://example.org/84>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/65>	<http://example.org/leaves>	<http://example.org/Room22>	
+<http://example.org/74>	<http://example.org/enters>	<http://example.org/ZZ3>	
+<http://example.org/83>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/89>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/64>	<http://example.org/leaves>	<http://example.org/Room11>	
+<http://example.org/73>	<http://example.org/enters>	<http://example.org/ZZ2>	
+<http://example.org/79>	<http://example.org/enters>	<http://example.org/ZZ2>	
+<http://example.org/82>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/88>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/63>	<http://example.org/leaves>	<http://example.org/Room33>	
+<http://example.org/69>	<http://example.org/enters>	<http://example.org/ZZ4>	
+<http://example.org/72>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/78>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/81>	<http://example.org/enters>	<http://example.org/ZZ4>	
+<http://example.org/87>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/62>	<http://example.org/enters>	<http://example.org/Room22>	
+<http://example.org/68>	<http://example.org/enters>	<http://example.org/ZZ3>	
+<http://example.org/90>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/71>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/77>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/80>	<http://example.org/enters>	<http://example.org/ZZ3>	
+<http://example.org/86>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/61>	<http://example.org/enters>	<http://example.org/Room22>	
+<http://example.org/67>	<http://example.org/enters>	<http://example.org/ZZ2>	
+<http://example.org/70>	<http://example.org/enters>	<http://example.org/ZZ5>	
+<http://example.org/76>	<http://example.org/enters>	<http://example.org/ZZ5>
