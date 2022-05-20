@@ -68,12 +68,12 @@ public class StreamGenerator
 		JsonObject jsonStream = _utils.toJsonObject(triples, 
 													_myUUID.toString(), 
 													Integer.toString(_msgCount),
-													"IS1",
+													IKafkaConstants.TOPIC_NAME,
 													false);
 		
 		final ProducerRecord<Long, String> record = new ProducerRecord<Long, String>(IKafkaConstants.TOPIC_NAME, jsonStream.toString());
 
-		System.out.println("Envio isso aqui:");
+		System.out.println("Envio para o topico "+IKafkaConstants.TOPIC_NAME+" isso aqui:");
 		System.out.println(jsonStream.toString());
 
 
